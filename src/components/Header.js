@@ -2,7 +2,9 @@ import Nav from "./Nav";
 
 const Header = () => {
   return `
-        ${Nav()}
-    `;
+  <header>
+    ${Nav()}
+  </header>
+  `;
 };
 export default Header;

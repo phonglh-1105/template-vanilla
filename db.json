@@ -1,0 +1,28 @@
+{
+  "projects": [
+    {
+      "name": "du an 1",
+      "categoryProjectId": "1",
+      "id": 1
+    },
+    {
+      "name": "du an 2",
+      "categoryProjectId": "3",
+      "id": 2
+    }
+  ],
+  "categoryProject": [
+    {
+      "id": "1",
+      "name": "Category 1"
+    },
+    {
+      "id": "2",
+      "name": "Category 2"
+    },
+    {
+      "id": "3",
+      "name": "Category 3"
+    }
+  ]
+}
