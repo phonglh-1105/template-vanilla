@@ -1,17 +1,12 @@
 {
   "projects": [
     {
-      "name": "du an 1",
+      "name": "phong le",
       "categoryProjectId": "1",
       "id": 1
-    },
-    {
-      "name": "du an 2",
-      "categoryProjectId": "3",
-      "id": 2
     }
   ],
-  "categoryProject": [
+  "categoryProjects": [
     {
       "id": "1",
       "name": "Category 1"

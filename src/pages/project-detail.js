@@ -3,8 +3,8 @@ import { router, useEffect, useState } from "../lib";
 import ProjectGallery from "../components/ProjectGallery";
 import ProjectInfo from "../components/ProjectInfo";
 
-const ProjectDetail = () => {
-  const [project, setProject] = useState(null);
+const ProjectDetail = ({ data: { id } }) => {
+  const [project, setProject] = useState({});
   useEffect(() => {
     fetch(`http://localhost:3000/projects/` + id)
       .then((res) => res.json())
@@ -13,14 +13,14 @@ const ProjectDetail = () => {
   }, []);
 
   return /*html*/ `
-        ${Header.render()}
+        ${Header()}
         <div class="container">
         <div class="row">
             <div class="col-6">
-            ${project ? ProjectGallery.render(project) : ""}
+            ${project ? ProjectGallery({ project }) : ""}
             </div>
             <div class="col-6">
-            ${project ? ProjectInfo.render(project) : ""}
+            ${project ? ProjectInfo({ project }) : ""}
             </div>
         </div>
         </div>
