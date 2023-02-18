@@ -6,6 +6,11 @@ const HomePage = () => {
   <div class="tw-flex">
       <!-- Sidebar -->
       <aside class="tw-w-1/4 tw-pr-8">
+        <div class="tw-flex tw-items-center">
+            <img class="tw-w-16 tw-h-16 tw-rounded-full tw-mr-4" src="https://via.placeholder.com/150" alt="avatar">
+            <h2 class="tw-text-lg tw-font-medium tw-text-gray-900">Le Hong Phong</h2>
+        </div>
+
           <h2 class="tw-text-xl tw-font-bold tw-mb-4">About Me</h2>
           <p class="tw-mb-4">Lorem ipsum dolor sit amet, consectetur adipiscing elit. Nunc in lectus id magna bibendum semper. Curabitur blandit libero sit amet turpis blandit lacinia.</p>
           <h2 class="tw-text-xl tw-font-bold tw-mb-4">Skills</h2>
