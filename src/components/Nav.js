@@ -2,19 +2,19 @@ import { menuList } from "../data";
 
 const Nav = () => {
   return /*html*/ `
-      <nav class="navbar navbar-expand-lg navbar-light bg-light">
-        <a class="navbar-brand" href="#">ASM</a>
-        <div class="collapse navbar-collapse" id="navbarNav">
-          <ul class="navbar-nav">
+      <div class="tw-container tw-mx-auto tw-flex tw-justify-between tw-items-center tw-px-4">
+        <h1 class="tw-text-xl tw-font-bold">My Portfolio</h1>
+        <nav>
+          <ul class="tw-flex">
           ${menuList
             .map(
-              (item) =>
-                `<li class="nav-item active"><a class="nav-link" href="${item.path}">${item.name}</a></li>`
+              (item) => /*html*/ `
+              <li class="tw-ml-6"><a class="hover:tw-text-gray-400" href="${item.path}">${item.name}</a></li>`
             )
-            .join("")} 
+            .join("")}  
           </ul>
-        </div>
-      </nav>
+        </nav>
+      </div>
   `;
 };
 export default Nav;

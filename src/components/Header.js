@@ -2,13 +2,9 @@ import Nav from "./Nav";
 
 const Header = () => {
   return `
-  <header>
+  <header class="tw-bg-gray-900 tw-text-white tw-py-6">
     ${Nav()}
   </header>
-  
-  <h1 class="tw-text-3xl tw-font-bold">
-    Hello world!
-  </h1>
   `;
 };
 export default Header;
