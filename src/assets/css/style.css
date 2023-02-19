@@ -19,7 +19,3 @@ a {
 * {
   box-sizing: border-box;
 }
-@font-face {
-  font-family: "OperatorMono-Italic";
-  src: url(../font/OperatorMono-Italic.ttf);
-}

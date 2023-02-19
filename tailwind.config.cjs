@@ -5,8 +5,7 @@ module.exports = {
   theme: {
     extend: {},
     fontFamily: {
-      operatorMono: "OperatorMono-Italic",
-      poppins: ["Poppins", "sans-serif"],
+      sfPro: ["SF Pro Display", "sans-serif"],
     },
   },
   plugins: [],
