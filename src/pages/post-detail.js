@@ -1,5 +1,4 @@
 import Header from "../components/Header";
-import PostInfo from "../components/postInfo";
 import { useEffect, useState } from "../lib";
 
 const PostDetail = ({ data: { id } }) => {
