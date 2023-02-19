@@ -14,7 +14,7 @@ const ProjectDetail = ({ data: { id } }) => {
 
   return /*html*/ `
         ${Header()}
-        <div class="container">
+        <div class="tw-container">
         <div class="row">
             <div class="col-6">
             ${project ? ProjectGallery({ project }) : ""}

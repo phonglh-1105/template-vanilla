@@ -14,13 +14,15 @@ import HomePage from "./pages/home";
 import PostsPage from "./pages/posts";
 import ProjectDetail from "./pages/project-detail";
 import ProjectsPage from "./pages/projects";
+import PostDetail from "./pages/post-detail";
 const app = document.querySelector("#app");
 
 router.on("/", () => render(HomePage, app));
 router.on("/about", () => render(About, app));
-router.on("/posts", () => render(PostsPage, app));
-router.on("/projects", () => render(ProjectsPage, app));
 router.on("/contact", () => render(ContactPage, app));
+router.on("/posts", () => render(PostsPage, app));
+router.on("/post/:id", (params) => render(() => PostDetail(params), app));
+router.on("/projects", () => render(ProjectsPage, app));
 router.on("/project/:id", (params) => render(() => ProjectDetail(params), app));
 
 // categories

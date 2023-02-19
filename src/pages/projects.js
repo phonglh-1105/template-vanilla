@@ -10,7 +10,7 @@ const ProjectsPage = () => {
   }, []);
   return /*html*/ `
     ${Header()}
-    <div class="container">
+    <div class="tw-container">
       <h1>Projects</h1>
     ${ProjectList({ projects })}
     </div>
